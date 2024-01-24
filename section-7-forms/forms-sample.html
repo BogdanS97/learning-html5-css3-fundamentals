@@ -4,60 +4,82 @@
 <meta charset="utf-8">
 <title>Forms</title>
 <style>
+label{
+    display: block;
+    width: 200px;
+    float: left;
+    text-align: right;
+    margin: 10px 5px;
+    clear: left;
+}
+
+input, select, textarea {
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+.checks {
+    vertical-align: bottom;
+}
+
+#submit {
+    margin-left: 200px;
+}
 
 </style>
 </head>
 
 <body>
 <h1>Forms</h1>
-
-First Name:
-
+<form action="form-submit.php" method="get">
+<fieldset>
+<legend> Personal Information </legend>
+<label for="first-name">First Name:</label>
+<input type="text" name="first name" autofocus required id="first-name"/>
 <br/>
-Email:
-
+<label for="email-address">Email:</label>
+<input type="email" name="email" placeholder="enter a valid email address" autofocus required id="email-address"/>
+</fieldset>
 <br/>
-Checkbox:
-check 1
-check 2
+<label for="checkbox">Checkbox:</label>
+<input class="checks" type="checkbox" name="check" value="ch1" Check 1 id="checkbox"/>
+<input class="checks" type="checkbox" name="check" value="ch2" Check 2 id="checkbox"/>
 <br/>
-Radio:
-radio 1
-radio 2
+<label for="radio">Radio:</label>
+<input class="checks" type="radio" name="radio" value="rd1" Radio 1 id="radio"/>
+<input class="checks" type="radio" name="radio" value="rd2" Radio 2 id="radio"/>
 <br/>
-Message:
-
+<label for="message-text">Message:</label>
+<textarea name="message" id="message-text">Your message here</textarea>
 <br/>
-Dropdown:
-
-Option 1
-Option 2
-Option 3
-Option 4
-Option 5
-
+<label for="dropdown-option">Dropdown:</label>
+<select name="dropdown">
+<option value="o1" id="dropdown-option"> Option 1 </option>
+<option value="o2" id="dropdown-option"> Option 2 </option>
+<option value="o3" id="dropdown-option"> Option 3 </option>
+<option value="o4" id="dropdown-option"> Option 4 </option>
+<option value="o5" id="dropdown-option"> Option 5 </option>
+</select>
 <br/>
-Password:
-
+<label for="password-text">Password </label>
+<input type="password" name="password" id="password-text"/>
 <br/>
-Number: 
-
+<label for="number-text">Number:</label> 
+<input type="number" name="number" id="number-text"/>
 <br/>
-Range: 
-1 10
+<label for="range-text">Range:</label>
+1 <input type="range" name="range" min="1" max="10" value="1" id="range-text"/> 10
 <br/>
-Date: 
-
+<label for="date-text">Date:</label> 
+<input type="date" name="date" id="date-text"/>
 <br/>
-Time: 
-
+<label for="time-text">Time:</label> 
+<input type="time" name="time" id="time-text"/>
 <br/>
-Color: 
-
-
+<label for="color-field">Color:</label> 
+<input type="color" name="color" id="color-field"/>
 <br/>
-
-
-
+<input id="submit" type="submit" value="Send"/>
+</form>
 </body>
 </html>
