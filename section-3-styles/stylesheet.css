@@ -1,0 +1,55 @@
+p {
+    text-align: justify;
+    color: red;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+body {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol {
+    /* list-style-image: url("star.gif"); */
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(9, 128, 248);
+}
+
+.blue-para {
+    color: blue;
+}
+
+.li-blue {
+    color: blue;
+}
+
+#main-heading{
+    color:red;
+}
+
+.green-highlight {
+    color: green;
+}
+
+.group {
+    font-style: italic;
+}
+
+.group h1 {
+    color: aqua;
+}
+
+.group h2 {
+    color: red;
+}
+
+.group p {
+    color: black;
+}
